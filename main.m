@@ -25,7 +25,6 @@ for x=1:xsize
         end
     end
 end
-
 subplot(2,1,1)
 imshow(img);
 subplot(2,1,2)

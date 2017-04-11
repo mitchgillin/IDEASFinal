@@ -14,6 +14,5 @@ function percent=getPercent(img,x,y,color)
     
     if color==string('green')
         percent=g^2/(r^2+g^2+b^2);
-    end
-    
+    end 
 end
