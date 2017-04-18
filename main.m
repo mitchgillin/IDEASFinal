@@ -1,4 +1,4 @@
-img=sec2;
+img=section1;
 
 xsize=size(img,1);
 ysize=size(img,2);
@@ -19,8 +19,8 @@ for x=1:xsize
             triPic(x,y,3)=0;
         %Display muscle as blue
         else
-            triPic(x,y,1)=0;
-            triPic(x,y,2)=0;
+            triPic(x,y,1)=255;
+            triPic(x,y,2)=255;
             triPic(x,y,3)=255;
         end
     end
