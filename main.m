@@ -1,6 +1,8 @@
 img=section1;
 oImg=img;
 modValue=200;
+redThresh=.45;
+greyThresh=.08;
 %IM2BW 
 xsize=size(img,1);
 ysize=size(img,2);
@@ -42,13 +44,13 @@ for x1=1:xsize/modValue
              end
                 
             %Display Collagen as Red
-            if getPercent(img,x,y,'red')>.45
+            if getPercent(img,x,y,'red')>redThresh
                 triPic(x,y,1)=255;
                 triPic(x,y,2)=0;
                 triPic(x,y,3)=0;
                 redPix=redPix+1;
             %Display void as black
-            elseif getPercent(img,x,y,'red')-getPercent(img,x,y,'blue')<.08
+            elseif getPercent(img,x,y,'red')-getPercent(img,x,y,'blue')<greyThresh
                 triPic(x,y,1)=0;
                 triPic(x,y,2)=0;
                 triPic(x,y,3)=0;
