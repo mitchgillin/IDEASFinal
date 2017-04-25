@@ -1,6 +1,6 @@
-img=section1;
+img=section2;
 oImg=img;
-modValue=200;
+modValue=500;
 redThresh=.45;
 greyThresh=.08;
 %IM2BW 
